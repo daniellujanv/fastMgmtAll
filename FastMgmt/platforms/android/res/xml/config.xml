@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Hello Cordova</name>
+    <name>FastMgmt</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+		FastMgmt stores your expenses and displays how much you have left to spend during the selected time. 
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="dluj@itu.dk" href="">
+        Daniel Lujan (dluj@itu.dk)
     </author>
     <content src="index.html" />
     <feature name="App">
@@ -17,7 +17,7 @@
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
+    <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
