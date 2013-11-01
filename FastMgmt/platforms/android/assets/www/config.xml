@@ -2,10 +2,10 @@
 <widget id="itu.mad.fastmgmt" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>FastMgmt</name>
     <description>
-		FastMgmt stores your expenses and displays how much you have left to spend during the selected time. 
+        Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="dluj@itu.dk" href="#">
-        Daniel Lujan (dluj@itu.dk)
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
