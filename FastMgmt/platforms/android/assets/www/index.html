@@ -10,12 +10,19 @@
     <script type="text/javascript" src="cordova.js"></script>
     -->
 <script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 	<div data-role="page" id="index" data-mini="true">
 
 		<div data-role="header" data-position="fixed">
 			<h1>FastMgmt!</h1>
+			<!-- 
+			<a href="#" data-ajax="false"
+				class="ui-btn-left" data-corners="false" data-theme="c"
+				data-role="button" data-icon="gear" data-ajax="false" 
+				onClick="window.localStorage.clear(); window.location.replace('index.html');">Erase</a>
+ 			-->
 			<a href="settings/settings.html" data-ajax="false"
 				class="ui-btn-right" data-corners="false" data-theme="c"
 				data-role="button" data-icon="gear" data-ajax="false">Settings</a>
@@ -26,37 +33,31 @@
 			<div id="ipts_amounts">
 			<!-- TO-DO display selected time -->
 				<h2 id="h_timeExpenses" class="center">SelectedTime Expenses</h2>
+				<h4 id="h_startingFrom" class="center"></h4>
 				<div data-role="fieldcontain">
-					<label for="ipt_selectedAmount">Amount</label> <input type="text"
-						name="ipt_selectedAmount" id="ipt_selectedAmount" value="000 DKK"
+					<label for="ipt_selectedAmount">Selected Amount to Track</label> 
+					<input type="text" data-theme="f" name="ipt_selectedAmount" id="ipt_selectedAmount" value="0.00 DKK"
 						disabled />
 				</div>
 				<!-- selected amount -->
 				<div data-role="fieldcontain">
-					<label for="ipt_leftAmount">Amount</label> <input type="text"
-						name="ipt_leftAmount" id="ipt_leftAmount" value=" 000 DKK"
+					<label for="ipt_leftAmount">Spent so far</label> 
+					<input type="text" data-theme="f" name="ipt_leftAmount" id="ipt_leftAmount" value="0.00 DKK"
 						disabled />
 				</div>
 				<!-- remaining amount -->
 			</div>
-<!-- TO-DO if categories in use -->
-			<div data-role="fieldcontain">
-				<div id="lv_categories" data-role="collapsible" data-mini="true" data-corners="false" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-collapse-cue-text="Available Categories">
-					<h1 id="h_selectTrackingTime">Available Categories</h1>
-					<ul id="lv_trackingTime" data-role="listview"  data-corners="false">
-					<!-- TO-DO method selectedCategory() -->
-						<li id="category1" value="category1" onClick="selectedCategory()">Category
-							1</li>
-						<li id="category2" value="category2" onClick="selectedCategory()">Category
-							2</li>
-						<li id="category3" value="category3" onClick="selectedCategory()">Category
-							3</li>
-					</ul>
+		<!-- TO-DO if categories in use -->
+			<div data-role="fieldcontain" id="fc_categories">
+				<div id="lv_categories" data-role="collapsible" data-mini="true" data-corners="false" data-collapsed="false" 
+					data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-collapse-cue-text="No categories yet">
+					<h1 id="h_selectCategory">No Categories</h1>
+					
 				</div>
 			</div>
-			<!-- TO-DO method addCategory() -->
-			<button data-mini="true" data-corners="false">New Category</button>
-			
+			<div data-role="fieldcontain" id="btn_addCategory">
+				<a href="categories/addCategory.html" data-role="button" data-rel="dialog" data-mini="true" data-corners="false">New Category</a>
+			</div>			
 		</div>
 		<!-- /content -->
 

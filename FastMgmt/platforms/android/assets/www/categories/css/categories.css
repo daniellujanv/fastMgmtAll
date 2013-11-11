@@ -8,6 +8,10 @@ body {
 	font-weight: bold;
 }
 
+h2 {
+	margin: 50px;
+}
+
 /* containers */
 .ui-field-contain{
 }
@@ -23,7 +27,7 @@ body {
 
 #settings div.ui-btn{
 	margin: auto;
-	margin-top:2%;
+	margin-top:5%;
 	width: 90%;
 	
 }
@@ -56,8 +60,8 @@ body {
 }
 
 /* inputs */
-#amount {
-	color: #000;
+#name {
+	color: #cdcdcd;
 }
 
 #settings .ui-field-contain div.ui-input-text {
@@ -67,4 +71,7 @@ body {
 
 #flip div.ui-slider-switch {
 	width: 60%;
+}
+
+#btn_save {
 }

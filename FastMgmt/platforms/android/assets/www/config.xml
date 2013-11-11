@@ -2,10 +2,13 @@
 <widget id="itu.mad.fastmgmt" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>FastMgmt</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        FastMgmt provides a fast way to help the user keep track of expenses over a short period of time (daily, weekly or monthly). 
+        With the development of new forms of payment, like NemPay, and quick checkouts the customer can easily lose track of money spent over a short period of time. 
+        With this comes the need for a personal finance manager, but the existing applications need too many clicks or they store more information than you need. 
+        
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="dluj@itu.dk" href="#">
+        Daniel Lujan
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
@@ -47,5 +50,5 @@
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
-    <access origin="http://127.0.0.1*" />
+    <access origin="*" />
 </widget>
