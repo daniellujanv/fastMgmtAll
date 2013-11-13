@@ -1,0 +1,27 @@
+/*****layout*******/
+body#index {
+    text-align: center;
+}
+
+h2{
+	text-align: center;
+	width: 100%;
+	clear:both; 
+}
+ 
+.center {
+	text-align: center;
+}
+
+
+/******containers***/
+
+#lv_categories{
+	border-top: 1px solid #cdcdcd;
+}
+
+/*******inputs******/
+#ipts_amounts input[type="text"]{
+	font-weight: bold;
+	color: #000;
+}

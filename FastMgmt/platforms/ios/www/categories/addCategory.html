@@ -1,0 +1,14 @@
+<div data-role="dialog" id="settings" data-close-btn="right">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Add Category</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>New Category</h2>		
+		<div data-role="fieldcontain">
+			<input type="text" name="name" id="name" value="Name..." onclick="clearText('name');" />
+		</div><!-- amount -->
+	</div><!-- /content -->
+	<button id="btn_save" data-theme="b" data-corners="false" onClick="onClickAddCategory()">Save!</button>
+</div><!-- /dialog -->

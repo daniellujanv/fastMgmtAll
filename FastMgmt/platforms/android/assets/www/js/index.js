@@ -113,12 +113,12 @@ function loadTrackingTime(permanentStorage){
 }
 
 function dateToString(date){
-	var days = {1:'Monday',2:'Tuesday',3:'Wednesday',4:'Thursday',5:'Friday',6:'Saturday',7:'Sunday'};
-	var months = {1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'};
+	var days = {1:'Mon',2:'Tues',3:'Wed',4:'Thu',5:'Fri',6:'Sat',0:'Sun'};
+	var months = {0:'Jan',1:'Feb',2:'Mar',3:'Apr',4:'May',5:'June',6:'July',7:'Aug',8:'Sept',9:'Oct',10:'Nov',11:'Dec'};
 	var newdate = new Date(date);
 	var afterDate = (newdate.getDate() == 1)? 'st': 'th';
-	var toString =  newdate.getDate()+afterDate+" of "+months[newdate.getMonth()]+" "+newdate.getFullYear()+" "+
-					newdate.getHours()+":"+newdate.getMinutes()+":"+newdate.getSeconds();
+	var toString =  days[newdate.getDay()] +" "+ newdate.getDate()+afterDate+" of "+months[newdate.getMonth()]+" "+newdate.getFullYear()+" "+
+	((newdate.getHours() == "0")? "00":newdate.getHours()) +":"+((newdate.getMinutes() == "0")? "00":newdate.getMinutes())+":"+((newdate.getSeconds() == "0")?"00":newdate.getSeconds());
 	return toString;
 }
 

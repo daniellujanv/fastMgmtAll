@@ -1,0 +1,13 @@
+<div data-role="dialog" id="settings" data-close-btn="right">
+<div data-role="header" data-position="fixed">
+		<h1>Add Expense</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>New Expense</h2>		
+		<div data-role="fieldcontain">
+			<input type="number" name="newExpense" id="newExpense" value="Amount..." onclick="clearText('newExpense');" />
+		</div><!-- amount -->
+	</div><!-- /content -->
+	<button id="btn_save" data-theme="b" data-corners="false" onClick="onClickAddExpense()">Save!</button>
+</div><!-- /page -->

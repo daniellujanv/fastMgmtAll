@@ -106,7 +106,7 @@ function onClickSaveBtn(){
 		var startTrackingChanged = permanentStorage.getItem("startTrackingChanged");
 		if(startTrackingChanged == 'true'){
 			if(startTracking == "now"){
-				trackingTime += "_"+(new Date()).toLocaleString();
+				trackingTime += "_"+ getDate();
 			}else{
 				trackingTime += "_"+getStartOfTime(trackingTime);
 			}
@@ -116,7 +116,7 @@ function onClickSaveBtn(){
 				trackingTime += "_"+tempTrackingTime[1];
 			}catch(err){ //trackingTime has not been stored yet
 				if(startTracking == "now"){
-					trackingTime += "_"+(new Date()).toLocaleString();
+					trackingTime += "_"+ getDate();
 				}else{
 					trackingTime += "_"+getStartOfTime(trackingTime);
 				}	
@@ -196,4 +196,8 @@ function fixCategoriesAmounts(categories){
 		var expenses_expenses = parseInt(permanentStorage.getItem("expenses-expenses")) + expenses;
 		permanentStorage.setItem("expenses-expenses",expenses_expenses);
 	}
+}
+
+function getDate(){
+	return new Date();
 }
