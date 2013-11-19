@@ -8,6 +8,9 @@ function getSettings(){
 		var dateNow = new Date();
 		if(dateNow > endOfTracking){
 			window.localStorage.clear(); 
+			permanentStorage.setItem("spent",0);
+			permanentStorage.setItem("expenses-expenses",0);
+			permanentStorage.setItem("numberCategories",0);
 			window.location.replace('settings.html');
 		}		
 		$(".ui-header").append("<a href='../index.html' class='ui-btn-right' data-ajax='false' " +
